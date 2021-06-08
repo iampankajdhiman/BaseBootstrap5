@@ -182,3 +182,11 @@
   justify-content: $justify;
   flex-wrap: $wrap;
 }
+
+@mixin content-limit($line) {
+  white-space: normal;
+  display: -webkit-box !important;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
